@@ -1,0 +1,166 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Cipher_Code</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+    <style>
+
+    .body
+    {
+      background-image:url('Pic/4.jpg');
+      width:100%;
+      height:100%;
+    }
+
+    ul
+    {
+      background-color:#FAEBD7;
+      padding:0;
+      margin:0;
+    }
+
+    ul li
+    {
+      list-style:none;
+      display:inline-block;
+      font-size:20px;
+      font-family:'Berlin Sans FB';
+      padding:8px;
+      margin:5px;
+    }
+
+    .b1
+    {
+      width:150px;
+      height:30px;
+      background-color:#E9967A;
+      font-family:'Berlin Sans FB';
+      font-size:20px;
+    }
+    .div2
+    {
+      background-image:url('Codeforiraq/Code.png');
+      width:500px;
+      height:400px;
+      margin:100px auto;
+      animation:slide 30s infinite;
+    }
+    @keyframes slide {
+      10%{ background-image:url(Codeforiraq/1.jpg);}
+      20%{ background-image:url(Codeforiraq/2.jpg);}
+      30%{ background-image:url(Codeforiraq/3.jpg);}
+      40%{ background-image:url(Codeforiraq/4.jpg);}
+      50%{ background-image:url(Codeforiraq/5.jpg);}
+      60%{ background-image:url(Codeforiraq/6.jpg);}
+      70%{ background-image:url(Codeforiraq/7.jpg);}
+      80%{ background-image:url(Codeforiraq/8.jpg);}
+      90%{ background-image:url(Codeforiraq/9.jpg);}
+      100%{ background-image:url(Codeforiraq/10.jpg);}
+    }
+
+    .sp
+    {
+      color:#000000;
+      font-family:'Goudy Old Style' , Georgia , 'Arial Narrow' ;
+      text-align:center;
+      font-weight:bold;
+      font-size:30px;
+    }
+    .rating
+    {
+      position:absolute;
+      left:50%;
+      transform:translate(-50%,-50%);
+      display:flex;
+    }
+
+    .rating input
+    {
+      display:none;
+    }
+
+    .rating label
+    {
+      display:block;
+      cursor:pointer;
+      width:50px;
+      background-color:#FFFFE0;
+    }
+
+    .rating label:before
+    {
+      content:'\f005';
+      font-family:'font-Awesome';
+      font-size:30px;
+      display:block;
+      color:#696969;
+    }
+
+    .rating label:after
+    {
+      position:absolute;
+      content:'\f005';
+      font-family:'font-awesome';
+      font-size:30px;
+      display:block;
+      color:#FFFF00;
+      top:0;
+      transition: .5s;
+      text-shadow:0 2px 5px rgba(0,0,0, .5);
+      opacity:0;
+    }
+    .rating label:hover:after ,
+    .rating label:hover ~ label:after ,
+    .rating input:checked ~ label:after
+    {
+      opacity:1;
+    }
+
+    </style>
+
+    <script type="text/javascript" src="Task.js"></script>
+    <body class="body">
+      <!-- Created by: Ahmed Yassen -->
+      <div class="div1">
+        <ul>
+          <li>Home</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>Colleges</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>News</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>Teachers</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>Students</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>Websits</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li><button onclick="Sinlog()" class="b1" >Sign-Up/Login</button></li>
+        </ul>
+      </div>
+      <br>
+      <div class="div2">
+
+      </div>
+
+
+      <p class="sp">University<br>All Universities using Evaluation System To give students Degrees</p>
+
+      <br><br>
+      <div class="rating">
+
+          <input onclick="EXC()" id="5star" type="radio" name="5-star"> <label for="5star"></label>
+          <br>
+          <p id="p1" style="font-size:20px;"></p>
+          <input onclick="VG()" id="4star" type="radio" name="4-star"> <label for="4star"></label>
+          <br>
+          <p id="p2" style="font-size:20px;"></p>
+          <input onclick="VV()" id="3star" type="radio" name="3-star"> <label for="3star"></label>
+          <br>
+          <p id="p3" style="font-size:20px;"></p>
+          <input onclick="GG()" id="2star" type="radio" name="2-star"> <label for="2star"></label>
+          <br>
+          <p id="p4" style="font-size:20px;"></p>
+          <input onclick="PP()" id="1star" type="radio" name="1-star"> <label for="1star"></label>
+          <br>
+          <p id="p5" style="font-size:20px;"></p>
+    </div>
+      <br><br><br><br><br><br><br><br><br>
+      <p style="font-weight:bold;">Cipher_Code &reg;  <br>  Contact-Us : Cipher_Code@Cipher_Code.org</p>
+    </body>
+</html>
